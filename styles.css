@@ -43,11 +43,11 @@ a {
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;*/
-  color: #08c;
+  color: #26cca8;
 }
 a:hover,
 a:focus {
-  color: #08c;
+  color: #26cca8;
   text-decoration: underline;
 }
 a.second-importance {
@@ -656,7 +656,7 @@ table.data th a {
   float: left;
   /*padding-left: 85px;*/
   margin-top: 3px;
-  color: #4F5461;
+  color: white;
   max-width: calc(100% - 93px);
   padding-top: 12px;
 }
@@ -667,7 +667,7 @@ table.data th a {
   text-transform: uppercase;
 }
 #logo-course-title {
-  color: #4D4D4D;
+  color: lightgray;
   display: inline-block;
   font-size: 13px;
 }
@@ -749,7 +749,7 @@ table.data th a {
   color: #dedede;
 }
 #header-main-logout-username {
-  color: #595959;
+  color: white;
 }
 @media (min-width: 768px) {
   .navbar-nav > li > a {
@@ -1620,7 +1620,7 @@ div.detail_switch_back {
   padding: 12px 5px 5px 5px;
 }
   .home-link:hover {
-    background-color: #1919194f;
+    background-color: #19191933;
   }
   .home-link > a:hover {
     text-decoration: none;
