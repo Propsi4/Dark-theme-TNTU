@@ -1964,7 +1964,7 @@ ol.dd-question {
 }
 li.multichoice-question:hover,
 li.multianswer-question:hover {
-  background-color: #e0e5ff;
+  background-color: #191919;
 }
 li.multichoice-question > label,
 li.multianswer-question > label {
