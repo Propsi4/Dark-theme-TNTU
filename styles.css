@@ -1707,7 +1707,7 @@ ol#tools {
 tr.group-selected {
   background-color: #FFF1DE;
 }
-table, th, td {
+table, th, td, tr {
   border: 1px solid #ddd;
 }
 .fs_tools {
