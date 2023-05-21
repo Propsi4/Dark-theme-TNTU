@@ -795,13 +795,13 @@ table.data th a {
 .main-nav .nav .nav-item a:hover,
 .main-nav .nav .nav-item a:focus {
   color: #fff;
-  background: #242424;
+  background: #191919;
 }
 .main-nav .nav .nav-item.active {
   position: relative;
 }
 .main-nav .nav .nav-item.active > a {
-  background: #242424;
+  background: #141414;
   color: #fff;
 }
 /*.main-nav .nav .nav-item.active > a:before {*/
@@ -1160,8 +1160,7 @@ div#warning {
 }
 .sidemenu-box-title {
   margin: 0 0 5px 0;
-  background: #E7EBF0;
-  border-top: 1px solid #64a5c4;
+  background: #242424;
   font-size: 18px;
   padding: 4px;
   color: #000;
