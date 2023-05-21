@@ -435,7 +435,7 @@ blockquote p {
   background-color: transparent;
 }
 i.sprite {
-  display: inline-none;
+  display: none;
   vertical-align: text-bottom;
 }
 .sprite-help {
