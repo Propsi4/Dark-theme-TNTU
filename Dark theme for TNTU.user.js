@@ -44,6 +44,18 @@
             links[i].remove();
     }
     }
+    const input_form = document.getElementsByClassName('input-form')[0]
+    if(input_form){
+        const main_flag = getElementByXpath('/html/body/div/div/div[2]/div[1]/div[3]/div/small[1]/img')
+        if(main_flag)
+            main_flag.src = 'https://img.icons8.com/?size=512&id=44GBiduBu6Xa&format=png'
+            main_flag.style.width = '16px'
+        const flags = input_form.getElementsByClassName('flagdiv')
+        for(let i = 0; i < flags.length; i++){
+            flags[i].children[0].src = 'https://img.icons8.com/?size=512&id=44GBiduBu6Xa&format=png'
+            flags[i].children[0].style.width = '16px'
+        }
+    }
     // Fetch the CSS file with GET request
     const request = new XMLHttpRequest();
     request.open('GET', 'https://raw.githubusercontent.com/Propsi4/Dark-theme-TNTU/main/styles.css', false);
