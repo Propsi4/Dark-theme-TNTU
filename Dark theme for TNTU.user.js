@@ -25,19 +25,22 @@
     const selector = document.getElementsByClassName('course-selector-a')[0]
     const dropdown = document.getElementsByClassName('course-selector-dropdown')[0]
     // set background color on hover
+    if(selector){
     selector.onmouseover = () => {
             selector.style.backgroundColor = 'transparent'
         }
     selector.onmouseout = () => {
             selector.style.backgroundColor = 'transparent'
         }
+    }
+    if(dropdown){
     dropdown.onmouseover = () => {
             selector.style.backgroundColor = 'transparent'
         }
     dropdown.onmouseout = () => {
             selector.style.backgroundColor = 'transparent'
         }
-
+    }   
     // get all link tags from head
     const links = head.getElementsByTagName('link');
     const img = getElementByXpath('//*[@id="logo-site-logo"]/img')
