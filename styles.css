@@ -239,7 +239,7 @@ blockquote p {
   padding: 0;
   border: 1px solid #F5F5F5;
   border-bottom: none;
-  background: #F0F0F0;
+  background: #242424;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -255,7 +255,6 @@ blockquote p {
   display: block;
   margin: 0;
   padding: 5px 15px;
-  color: #444444;
   text-decoration: none;
   text-align: center;
 }
@@ -265,9 +264,8 @@ blockquote p {
 .flex-tabs > li.active,
 .flex-tabs > li.active:hover {
   border: 1px solid #e8e8e8;
-  border-bottom: none;
-  border-top: 2px solid #6091ba;
-  background: #fff;
+  border-bottom: 2px solid #10e8b9;
+  background: #141414;
 }
 .panel-group .panel {
   -webkit-border-radius: 0;
