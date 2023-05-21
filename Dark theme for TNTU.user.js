@@ -14,6 +14,23 @@
     // get element by xpath
     const getElementByXpath = (path) => document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
     const head = document.getElementsByTagName('head')[0];
+
+    const selector = document.getElementsByClassName('course-selector-a')[0]
+    const dropdown = document.getElementsByClassName('course-selector-dropdown')[0]
+    // set background color on hover
+    selector.onmouseover = () => {
+            selector.style.backgroundColor = 'transparent'
+        }
+    selector.onmouseout = () => {
+            selector.style.backgroundColor = 'transparent'
+        }
+    dropdown.onmouseover = () => {
+            selector.style.backgroundColor = 'transparent'
+        }
+    dropdown.onmouseout = () => {
+            selector.style.backgroundColor = 'transparent'
+        }
+
     // get all link tags from head
     const links = head.getElementsByTagName('link');
     const img = getElementByXpath('//*[@id="logo-site-logo"]/img')
@@ -32,13 +49,12 @@
     request.open('GET', 'https://raw.githubusercontent.com/Propsi4/Dark-theme-TNTU/main/styles.css', false);
     request.send(null);
     // Add the CSS to the head
-    console.log(request.responseText)
     const style = document.createElement('style');
     style.type = 'text/css';
     style.id = `${(new Date()).getHours()}:${(new Date()).getMinutes()}:${(new Date()).getSeconds()}`
     style.innerHTML = request.responseText;
     head.appendChild(style);
-    const dropdown = getElementByXpath('/html/body/div/div/div[1]/div/ul/style');
-    if(dropdown)
-        dropdown.innerHTML = '.course-selector-dropdown {backdrop-filter: blur(10px);border-radius: 0px 0px 5px 5px;position: absolute;display: none;z-index: 99999;}.course-selector-dropdown li {clear: both !important;display: block !important;padding: 2px 0;width: 100}.course-selector-dropdown li>a {display: block;width: 100%;color: white;}.course-selector-dropdown li>a:hover {text-decoration: none;}.course-selector-dropdown li:hover {background-color: #191919;}'
+    const dropdown_style = getElementByXpath('/html/body/div/div/div[1]/div/ul/style');
+    if(dropdown_style)
+        dropdown_style.innerHTML = '.course-selector-dropdown {backdrop-filter: blur(10px);border-radius: 0px 0px 5px 5px;position: absolute;display: none;z-index: 99999;}.course-selector-dropdown li {clear: both !important;display: block !important;padding: 2px 0;width: 100}.course-selector-dropdown li>a {display: block;width: 100%;color: white;}.course-selector-dropdown li>a:hover {text-decoration: none;}.course-selector-dropdown li:hover {background-color: #191919;}'
 })();
