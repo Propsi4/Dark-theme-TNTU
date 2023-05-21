@@ -98,6 +98,7 @@ a.second-importance:hover {
 }
 legend {
   /*default is 22px, too big for this design*/
+  color:white;
   font-size: 17px;
 }
 select[size] {
