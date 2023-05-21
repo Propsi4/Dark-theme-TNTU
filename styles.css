@@ -435,7 +435,7 @@ blockquote p {
   background-color: transparent;
 }
 i.sprite {
-  display: inline-block;
+  display: inline-none;
   vertical-align: text-bottom;
 }
 .sprite-help {
@@ -1185,7 +1185,7 @@ div#warning {
   display: inline-block;
 }
 .menumenu-folder-title {
-  color: #333;
+  color: #10e8b9;
   font-weight: 600;
 }
 .contact_instructor_side_box-item {
