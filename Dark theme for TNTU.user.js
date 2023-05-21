@@ -14,7 +14,14 @@
     // get element by xpath
     const getElementByXpath = (path) => document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
     const head = document.getElementsByTagName('head')[0];
-
+    const timer = document.getElementById('timer_c');
+    if(timer){
+        timer.style.backdropFilter = 'blur(10px)'
+        timer.style.color = 'white'
+        timer.style.backgroundColor = 'transparent'
+        timer.style.borderRadius = '10px';
+        document.getElementById('bgBarRed').style.color = '#242424'
+    }
     const selector = document.getElementsByClassName('course-selector-a')[0]
     const dropdown = document.getElementsByClassName('course-selector-dropdown')[0]
     // set background color on hover
