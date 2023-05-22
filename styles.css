@@ -967,10 +967,15 @@ div.page-title {
   margin-left: 15px;
 }
 .menutoggle-desktop-btn-off {
-  background-image: url('../images/right_arrow.png');
+    background: url('https://img.icons8.com/?size=512&id=37353&format=png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .menutoggle-desktop-btn-on {
-  background-image: url('../images/left_arrow.png');
+    background: url('https://img.icons8.com/?size=512&id=37353&format=png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
 }
 #menutoggle-on-mobile > button {
   padding: 5px;
