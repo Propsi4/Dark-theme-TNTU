@@ -531,7 +531,7 @@ select {
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background: #f5f8fb;
+  background: #1919195e;
 }
 .table-boxed,
 .table-bordered {
