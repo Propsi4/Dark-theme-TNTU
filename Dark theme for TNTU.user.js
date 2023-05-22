@@ -40,7 +40,7 @@
     dropdown.onmouseout = () => {
             selector.style.backgroundColor = 'transparent'
         }
-    }   
+    }
     // get all link tags from head
     const links = head.getElementsByTagName('link');
     const img = getElementByXpath('//*[@id="logo-site-logo"]/img')
@@ -52,6 +52,7 @@
         if (links[i].href === 'https://dl.tntu.edu.ua/themes/Australia/css/styles.css?v=3.9'){
             // change href attribute
             links[i].remove();
+            break;
     }
     }
     const input_form = document.getElementsByClassName('input-form')[0]
