@@ -963,16 +963,18 @@ div.page-title {
   display: inline-block;
   width: 20px;
   height: 18px;
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-left: 15px;
 }
 .menutoggle-desktop-btn-off {
     background: url('https://img.icons8.com/?size=512&id=37353&format=png');
+    background-repeat: no-repeat;
+    background-size: contain;
     transform: rotate(180deg);
 }
 .menutoggle-desktop-btn-on {
     background: url('https://img.icons8.com/?size=512&id=37353&format=png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 #menutoggle-on-mobile > button {
   padding: 5px;
